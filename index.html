@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <title>Scottish Independence | Home</title>
+        
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        
+        <!-- Custom CSS -->
+        <link href="css/stylish-portfolio.css" rel="stylesheet">
+        
+        <!-- Custom Fonts -->
+        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if y
+        ou view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <!-- jQuery Version 1.11.0 -->
+        <script src="js/jquery-1.11.0.js" type="text/javascript">></script>
+        
+        
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js" type="text/javascript">></script>
+        
+        <!-- Processing -->
+        <!--[if lt IE 9]>
+        <script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
+        <![endif]-->
+        <script src="js/processing.js" type="text/javascript"></script>
+        
+        
+        <script src="js/jquery.visible.min.js"></script>
+        
+    </head>
+    
+    <body>
+        <!-- Navigation -->
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="#top">Title</a>
+                </li>
+                <li>
+                    <a href="#top">Home</a>
+                </li>
+                <li>
+                    <a href="#yesno">Yes or No</a>
+                </ul>
+            </nav>
+            
+            
+            
+            <!-- Scot Map -->
+            <section id="top">
+                <div class="container-fluid" id="indyscot_container">
+                    <div class="text-center">
+                        <canvas id="indyscotmap_canvas" data-processing-sources="pde/IndyScot.pde" style="height:auto; width:auto; focus { outline: 0; }" tabindex="1"></canvas>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Splash Intro -->
+            <section id="about" class="about services bg-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>How The Yes Was Won</h2>
+                            <p class="lead">The Twittersphere has been alive with debate on the Scottish independence referendum. Over the last six months we have been tracking the hashtag <em>#IndyScot</em> and listening to what the world has been saying.</p>
+                            <a href="#yesorno_container" class="btn btn-dark btn-lg">Have a Deek</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            
+            
+            <!-- Aye or Naw -->
+            <section class="about">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Yes or No</h2>
+                            <p class="lead">Social media has been the battleground on both sides of to put their arguments across. We have tracked how many times the words <font color="blue"><b>YES</b></font> &amp; <font color="red"><b>NO</b></font> have been tweeted. Afterall, the referendum boils down to one simple question:<br></p>
+                            <h3><em>Should Scotland be an independent country?</em><h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="container-fluid" id="yesorno_container">
+                    <div class="row">
+                        <div class="text-center">
+                            <canvas id="yesorno_canvas" data-processing-sources="pde/YesNoPie.pde" style="height:auto; width:auto; focus { outline: 0; }" tabindex="1"></canvas>
+                            
+                            <div class="row text-center">
+                                <a href="#timepiece" class="btn btn-dark btn-lg">Braw!</a>
+                                <p><br></p>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            
+            
+            
+            <!-- Time Line -->
+            <section id = "timepiece">
+                <div class="container-fluid" id="timepiece_canvas">
+                    <div class="text-center">
+                        <canvas id="timepiece_canvas" data-processing-sources="pde/TimepieceGraph.pde" style="height:auto; width:auto; focus { outline: 0; }" tabindex="1"></canvas>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- time line about -->
+            <section id="about2" class="about services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Hope Vs Fear</h2>
+                            <p class="lead">Take a daunder though the past with this timeline to see what was being said and when. Use the mouse to set the clocks back.</p>
+                            <a href="#timepiece" class="btn btn-dark btn-lg">Braw!</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            
+            
+            
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="http://placehold.it/1200x315"alt="...">
+                        <div class="carousel-caption">
+                            <h3>Data Collection</h3>
+                            <h4>Tweets were collected using the hashtag #IndyScot for the 6 months running up to the vote</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="http://placehold.it/1200x315"alt="...">
+                        <div class="carousel-caption">
+                            <h3>Analysis</h3>
+                            <h4>We looked at what what the trends were over time</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="http://placehold.it/1200x315"alt="...">
+                        <div class="carousel-caption">
+                            <h3>Animation</h3>
+                            <h4>Finally we sought to show these in an interesting and interactive way</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            
+            
+            
+            <!-- Services -->
+            <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+            <section id="services" class="services bg-primary">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <h2>Campaigns</h2>
+                            <hr class="small">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="service-item">
+                                        <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-thumbs-o-up fa-stack-1x text-primary"></i>
+                                        </span>
+                                        <h4>
+                                        <strong>Yes</strong>
+                                        </h4>
+                                        <p>Say Yes to an independent Scotland.</p>
+                                        <a href="http://www.yesscotland.net/" class="btn btn-light">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="service-item">
+                                        <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-thumbs-o-down fa-stack-1x text-primary"></i>
+                                        </span>
+                                        <h4>
+                                        <strong>Better Together</strong>
+                                        </h4>
+                                        <p>No Thanks, Scotland should remain part of the UK.</p>
+                                        <a href="http://bettertogether.net/" class="btn btn-light">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.col-lg-10 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
+            
+            <!-- Callout -->
+            <aside class="callout">
+                <div class="text-vertical-center">
+                    <h1>Bonnie Scotland</h1>
+                </div>
+            </aside>
+            
+            
+            
+            <!-- Call to Action -->
+            <aside class="call-to-action bg-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h3>The buttons below are impossible to resist.</h3>
+                            <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                            <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            
+            
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 text-center">
+                            <h4><strong>Graeme Lyon</strong>
+                            </h4>
+                            <p>Animations built with <a href="http://www.processing.org">Processing</a></p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:graeme.lyon@indy-scot.com">graeme.lyon@indy-scot.com</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            </li>
+                            
+                        </ul>
+                        <hr class="small">
+                        <p class="text-muted">Copyright &copy; Graeme Lyon 2014</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        <!-- Custom Theme JavaScript -->
+        <script>
+        // Closes the sidebar menu
+        $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+        });
+        
+        // Opens the sidebar menu
+        $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+        });
+        
+        // Scrolls to the selected menu item on the page
+        $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+        
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+        $('html,body').animate({
+        scrollTop: target.offset().top
+        }, 1000);
+        return false;
+        }
+        }
+        });
+        });
+        </script>
+        
+        
+        <!-- My JS Helper functions Processing -->
+        <script>
+        // Resize window
+        $(window).resize(function() {
+        //scot map
+        var pjs = Processing.getInstanceById('indyscotmap_canvas');
+        if(pjs != null) {
+        pjs.resizeSketch(document.getElementById('indyscot_container').offsetWidth, document.getElementById('indyscot_container').offsetHeight);
+        }
+        pjs = undefined;
+        
+        //yes or no
+        var pjs = Processing.getInstanceById('yesorno_canvas');
+        if(pjs != null) {
+        pjs.resizeSketch(document.getElementById('yesorno_container').offsetWidth, document.getElementById('yesorno_container').offsetHeight);
+        }
+        pjs = undefined;
+        
+        });
+        </script>
+        
+        <script>
+        // Update visible on scroll and pause sketch
+        $(window).scroll(function() {
+        var pjs = Processing.getInstanceById('indyscotmap_canvas');
+        if(pjs != null) {
+        if ($('#indyscot_container').visible(true)) {
+        pjs.SketchVisible(true);
+        } else {
+        pjs.SketchVisible(false);
+        }
+        pjs = undefined;
+        }
+
+        var pjs = Processing.getInstanceById('yesorno_canvas');
+        if(pjs != null) {
+        if ($('#yesorno_canvas').visible(true)) {
+        pjs.SketchVisible(true);
+        } else {
+        pjs.SketchVisible(false);
+        }
+        pjs = undefined;
+        }
+
+        });
+        
+        
+        </script>
+        
+        
+        
+        <!-- Call Carousel -->
+        <script type="text/javascript">
+        (function($){$('.carousel').carousel();
+        })(jQuery);
+        
+        $('a[data-slide="prev"]').click(function() {
+        $('#myCarousel').carousel('prev');
+        });
+        
+        $('a[data-slide="next"]').click(function() {
+        $('#myCarousel').carousel('next');
+        });
+        
+        </script>
+        
+    </body>
+    
+    
+</html>
